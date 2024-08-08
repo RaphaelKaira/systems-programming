@@ -21,6 +21,7 @@ int main() {
  * Reads  a line until a newline character is encountered, the end-of-file (EOF) is reached, or n-1 characters are read (whichever comes first). It then null-terminates the string.
  * Retains whitespace characters, including spaces and tabs.
  * Protects against buffer overflow by limiting the number of characters read to n-1.
+ * NOTE: fgets() reads a line from the file until it encounters a newline character, EOF, or the buffer size limit. It includes the newline character in the buffer if it is read before reaching the buffer size limit.
 */
 
 //CODE using Scanf
