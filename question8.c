@@ -14,7 +14,7 @@ int main() {
     if (pid == 0) {
         printf("This is the child process (PID: %d)\n", getpid()); //getpid() is used to obtain the process ID (PID) of the calling process.
     } else {
-        printf("This is the parent process (PID: %d), child PID: %d\n", getpid(), pid);
+        printf("This is the parent process (PID: %d), child PID: %d\n", getppid(), pid);
     }
     return 0;
 }

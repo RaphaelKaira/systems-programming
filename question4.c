@@ -52,6 +52,7 @@ int main() {
     * 0777: Full permissions for everyone (read, write, and execute).Meaning: The owner, group, and others can read, write, and execute the file.
  */
 /*
+chmod() is used to change permissions for a file in a unix machine. Ex: chmod(540 test.txt)
 Understanding Permissions:
     Owner: The user who owns the file.
     Group: Users who are members of the file's group.

@@ -9,7 +9,7 @@ int main() {
     printf("Enter the filename: ");
     scanf("%s", filename);
 
-    fptr = fopen(filename, "w");
+    fptr = fopen(filename, "r+");
 
     if (fptr == NULL) {
         printf("Cannot open file \n");
