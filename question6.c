@@ -23,6 +23,7 @@ int main() {
  * Return values: 
    * DIR: A pointer to a DIR structure representing the opened directory. This pointer is used in subsequent calls to readdir() and closedir().
    * NULL: If the directory cannot be opened (e.g., if it doesn’t exist or permission is denied), opendir() returns NULL. 
+ 
  * Syntax: readdir(DIR *dirp);
    * dirp: A pointer to a DIR structure obtained from opendir().
  * Return values: 

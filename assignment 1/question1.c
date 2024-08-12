@@ -7,7 +7,7 @@ int main() {
 
 
     printf("Enter a string: ");
-    fgets(str, 100,"notice.txt");
+    fgets(str, 100,stdin);
 
     printf("You entered: %s", str);
 
