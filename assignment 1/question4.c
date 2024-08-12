@@ -15,11 +15,15 @@ int main() {
         return 1;
     }
 
-    c = fgetc(fptr);
+    /*c = fgetc(fptr);
     while (c != EOF) {
         printf("%c", c);
         c = fgetc(fptr);
     }
+    */
+   while((c=fgetc(fptr)) != EOF){
+        printf("%c",c);
+   }
 
     fclose(fptr);
     return 0;

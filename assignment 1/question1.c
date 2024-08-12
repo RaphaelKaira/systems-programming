@@ -1,16 +1,45 @@
 //Question:Write a C program that reads a string from the user and prints it.
 #include <stdio.h>
+#include <errno.h>
 
 int main() {
     char str[100];
 
+
     printf("Enter a string: ");
-    fgets(str, 100, stdin);
+    fgets(str, 100,"notice.txt");
 
     printf("You entered: %s", str);
 
     return 0;
 }
+
+/*
+//Read string from file.
+int main() {
+    FILE *file;
+    char str[100];
+
+    // Open the file "notice.txt" for reading
+    file = fopen("notice.txt", "r");
+    if (file == NULL) {
+        perror("Error opening file");
+        return 1;
+    }
+
+    // Read a line from the file
+    if (fgets(str, sizeof(str), file) != NULL) {
+        printf("Read from file: %s", str);
+    } else {
+        printf("Error reading from file or file is empty.\n");
+    }
+
+    // Close the file
+    fclose(file);
+
+    return 0;
+}
+*/
 
 /**
  * fgets function is used to read a string from a file (or from standard input if the file is stdin).
@@ -24,7 +53,7 @@ int main() {
  * NOTE: fgets() reads a line from the file until it encounters a newline character, EOF, or the buffer size limit. It includes the newline character in the buffer if it is read before reaching the buffer size limit.
 */
 
-//CODE using Scanf
+//CODE using Scanfs
 /*
 int main() {
     char str[100];  // Declare a char array to store the input string

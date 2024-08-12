@@ -18,6 +18,7 @@ int main() {
     printf("Enter a string to append to the file: ");
     getchar(); // consume newline left by scanf
     fgets(str, 100, stdin);
+    //scanf("%s",str);
 
     fprintf(fptr, "%s", str);//"%s": The format specifier that tells fprintf to write a string.str: The string to be written to the file.
     fclose(fptr);
